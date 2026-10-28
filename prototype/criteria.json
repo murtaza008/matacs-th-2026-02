@@ -1,0 +1,72 @@
+{
+  "category": "Commercial Solar Installation",
+  "version": 1,
+  "note": "What the admin screens would save for this category. Weights, scales and checks are data, not code.",
+  "project": {
+    "description": "150 kW rooftop solar system on a warehouse in Windsor, Ontario. Budget ceiling $260,000 CAD. Must be complete within 16 weeks of award."
+  },
+  "fields": [
+    { "key": "bidder_holds_ontario_electrical_licence", "type": "boolean",
+      "question": "Does the proposal state that the bidding company itself holds an Ontario electrical contractor licence (ECRA/ESA)? Answer false if the licence belongs to a subcontractor or partner, or is promised later." },
+    { "key": "licence_number", "type": "text",
+      "question": "The bidder's ECRA/ESA licence number, exactly as written." },
+    { "key": "wsib_clearance", "type": "boolean",
+      "question": "Does the proposal confirm the bidder has current WSIB clearance?" },
+    { "key": "liability_insurance_cad", "type": "number",
+      "question": "The bidder's liability insurance coverage amount in CAD (for example $5M = 5000000)." },
+    { "key": "qualifying_installs", "type": "number",
+      "question": "How many completed commercial solar installations of 100 kW or larger does the bidder claim in the last 5 years? If the stated period reaches back further than 5 years (before 2021), still report the stated count but set status to unclear." },
+    { "key": "experience_period", "type": "text",
+      "question": "The time period the bidder gives for those installations, as written." },
+    { "key": "total_price_cad", "type": "number",
+      "question": "The total price for the project in CAD." },
+    { "key": "completion_weeks", "type": "number",
+      "question": "The committed completion time in weeks from award. Use null with status unclear if the schedule is not committed to a number." },
+    { "key": "panel_warranty_years", "type": "number",
+      "question": "Panel (manufacturer) warranty length in years." },
+    { "key": "workmanship_warranty_years", "type": "number",
+      "question": "Workmanship (installation) warranty length in years." },
+    { "key": "named_project_lead", "type": "boolean",
+      "question": "Does the proposal commit a named project lead or project manager now? Answer false if a lead or coordinator will only be assigned later." },
+    { "key": "crew_size", "type": "number",
+      "question": "Number of crew members committed to the project." },
+    { "key": "safety_plan", "type": "boolean",
+      "question": "Does the proposal include a site safety plan?" },
+    { "key": "performance_monitoring", "type": "boolean",
+      "question": "Does the proposal include ongoing performance monitoring of the installed system? Construction progress reports do not count." }
+  ],
+  "mandatory": [
+    { "id": "licence", "name": "Ontario electrical contractor licence",
+      "checks": [ { "field": "bidder_holds_ontario_electrical_licence", "op": "is_true" } ] },
+    { "id": "wsib_insurance", "name": "WSIB clearance and $5M liability insurance",
+      "checks": [
+        { "field": "wsib_clearance", "op": "is_true" },
+        { "field": "liability_insurance_cad", "op": ">=", "value": 5000000 }
+      ] }
+  ],
+  "limits": [
+    { "id": "budget", "name": "Within $260,000 budget ceiling", "field": "total_price_cad", "op": "<=", "value": 260000 },
+    { "id": "schedule", "name": "Complete within 16 weeks", "field": "completion_weeks", "op": "<=", "value": 16 }
+  ],
+  "weighted": [
+    { "id": "experience", "name": "Relevant experience", "weight": 30,
+      "rule": { "type": "linear", "field": "qualifying_installs", "zero_at": 0, "full_at": 15 } },
+    { "id": "price", "name": "Price", "weight": 25,
+      "rule": { "type": "linear", "field": "total_price_cad", "zero_at": 260000, "full_at": 200000 } },
+    { "id": "timeline", "name": "Timeline", "weight": 15,
+      "rule": { "type": "linear", "field": "completion_weeks", "zero_at": 16, "full_at": 8 } },
+    { "id": "warranty", "name": "Warranty", "weight": 15,
+      "rule": { "type": "average", "parts": [
+        { "type": "linear", "field": "panel_warranty_years", "zero_at": 0, "full_at": 25 },
+        { "type": "linear", "field": "workmanship_warranty_years", "zero_at": 0, "full_at": 15 }
+      ] } },
+    { "id": "team", "name": "Team and approach", "weight": 15,
+      "rule": { "type": "checklist", "items": [
+        { "field": "named_project_lead", "op": "is_true" },
+        { "field": "crew_size", "op": ">", "value": 0 },
+        { "field": "safety_plan", "op": "is_true" },
+        { "field": "performance_monitoring", "op": "is_true" }
+      ] } }
+  ],
+  "tie_break": ["experience", "price"]
+}

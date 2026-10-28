@@ -1,0 +1,37 @@
+[
+  {
+    "proposal": "A",
+    "rank": 1,
+    "status": "ranked",
+    "score": 72.2,
+    "reason": "Passes all mandatory checks and project limits. 72.2/100, strongest on team and approach (100.0/100), weakest on price (36.7/100)."
+  },
+  {
+    "proposal": "E",
+    "rank": 2,
+    "status": "ranked",
+    "score": 57.4,
+    "reason": "Passes all mandatory checks and project limits. 57.4/100, strongest on team and approach (100.0/100), weakest on price (29.2/100)."
+  },
+  {
+    "proposal": "D",
+    "rank": null,
+    "status": "flagged",
+    "score": null,
+    "reason": "Held for human review: Cannot confirm 'Complete within 16 weeks': Schedule deferred until after a site assessment; no number committed. Provisional score 54.1 (not ranked until a reviewer clears it)."
+  },
+  {
+    "proposal": "C",
+    "rank": null,
+    "status": "flagged",
+    "score": null,
+    "reason": "Held for human review: Possible manipulation: text addressed to the evaluator was found and ignored. Provisional score 48.4 (not ranked until a reviewer clears it)."
+  },
+  {
+    "proposal": "B",
+    "rank": null,
+    "status": "ineligible",
+    "score": null,
+    "reason": "Not scored. Fails Ontario electrical contractor licence (Electrical work goes to a licensed subcontractor to be confirmed after award; the bidder does not claim its own licence)."
+  }
+]

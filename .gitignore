@@ -1,0 +1,5 @@
+.env
+__pycache__/
+# Proposal text from the brief must not be committed; extraction cache holds quotes from it.
+prototype/samples/
+prototype/cache/

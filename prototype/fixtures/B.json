@@ -1,0 +1,20 @@
+{
+  "_source": "Hand-labelled expected extraction for proposal B. Evidence quotes are left empty because the brief asks candidates not to copy proposal text into the repository; a live run fills them in.",
+  "fields": {
+    "bidder_holds_ontario_electrical_licence": { "value": false, "status": "stated", "evidence": "", "note": "Electrical work goes to a licensed subcontractor to be confirmed after award; the bidder does not claim its own licence." },
+    "licence_number": { "value": null, "status": "not_stated", "evidence": "", "note": "" },
+    "wsib_clearance": { "value": true, "status": "stated", "evidence": "", "note": "" },
+    "liability_insurance_cad": { "value": 5000000, "status": "stated", "evidence": "", "note": "" },
+    "qualifying_installs": { "value": 6, "status": "stated", "evidence": "", "note": "" },
+    "experience_period": { "value": "past four years", "status": "stated", "evidence": "", "note": "" },
+    "total_price_cad": { "value": 189500, "status": "stated", "evidence": "", "note": "'Most competitive in the region' is a marketing claim and was ignored." },
+    "completion_weeks": { "value": 10, "status": "stated", "evidence": "", "note": "" },
+    "panel_warranty_years": { "value": 25, "status": "stated", "evidence": "", "note": "" },
+    "workmanship_warranty_years": { "value": 5, "status": "stated", "evidence": "", "note": "" },
+    "named_project_lead": { "value": false, "status": "stated", "evidence": "", "note": "A coordinator will be assigned at kickoff; no lead named." },
+    "crew_size": { "value": null, "status": "not_stated", "evidence": "", "note": "" },
+    "safety_plan": { "value": null, "status": "not_stated", "evidence": "", "note": "" },
+    "performance_monitoring": { "value": null, "status": "not_stated", "evidence": "", "note": "" }
+  },
+  "suspicious_content": []
+}

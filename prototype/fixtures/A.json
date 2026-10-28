@@ -1,0 +1,20 @@
+{
+  "_source": "Hand-labelled expected extraction for proposal A. Evidence quotes are left empty because the brief asks candidates not to copy proposal text into the repository; a live run fills them in.",
+  "fields": {
+    "bidder_holds_ontario_electrical_licence": { "value": true, "status": "stated", "evidence": "", "note": "" },
+    "licence_number": { "value": "ECRA/ESA #7001234", "status": "stated", "evidence": "", "note": "" },
+    "wsib_clearance": { "value": true, "status": "stated", "evidence": "", "note": "" },
+    "liability_insurance_cad": { "value": 5000000, "status": "stated", "evidence": "", "note": "" },
+    "qualifying_installs": { "value": 14, "status": "stated", "evidence": "", "note": "" },
+    "experience_period": { "value": "since 2021", "status": "stated", "evidence": "", "note": "" },
+    "total_price_cad": { "value": 238000, "status": "stated", "evidence": "", "note": "Includes permits and utility connection." },
+    "completion_weeks": { "value": 12, "status": "stated", "evidence": "", "note": "" },
+    "panel_warranty_years": { "value": 25, "status": "stated", "evidence": "", "note": "" },
+    "workmanship_warranty_years": { "value": 10, "status": "stated", "evidence": "", "note": "" },
+    "named_project_lead": { "value": true, "status": "stated", "evidence": "", "note": "" },
+    "crew_size": { "value": 6, "status": "stated", "evidence": "", "note": "" },
+    "safety_plan": { "value": true, "status": "stated", "evidence": "", "note": "" },
+    "performance_monitoring": { "value": true, "status": "stated", "evidence": "", "note": "12 months of remote monitoring." }
+  },
+  "suspicious_content": []
+}
