@@ -5,7 +5,7 @@
 | **Candidate** | Murtaza Mazhar |
 | **Reference** | MATACS-TH-2026-02 |
 | **Role** | Associate Software Developer |
-| **Time actually spent** | About 1.5 hours in total, including the optional prototype |
+| **Time actually spent** | About 60 minutes on the required deliverables, plus around 30 minutes on the optional prototype |
 
 ## Files
 
@@ -40,6 +40,4 @@ The score breakdown for each proposal is in [`prototype/output/report.md`](proto
 
 ## How I used AI tools
 
-I used Claude Code quite a lot on this. I gave it the brief, talked through the flow with it, and had it draft the prompts, the write-up and the prototype script. Most of the files came out of one session, which is why the commits are close together.
-
-Where I didn't just go with it: proposal D. If you only run the formulas, D gets zero for timeline and lands 3rd. I didn't think that was fair, because D never gave a bad timeline, it just didn't give one. If they come back with 14 weeks or less, they'd actually beat E. So I made D "flagged" and left it to the reviewer to ask the bidder.
+Honestly, I leaned on Claude Code a lot for this. I fed it the brief, bounced the flow off it, and had it draft the prompts, the write-up and the prototype, which is also why the commits are all bunched together (it was basically one session). The one spot where I didn't just vibe with its output was proposal D: run the formulas as-is and D gets zero for timeline and lands 3rd, which felt off to me because D never gave a bad timeline, it just didn't give one at all. If they come back with 14 weeks or less they'd actually beat E, so I flagged D and left that call to the reviewer.
