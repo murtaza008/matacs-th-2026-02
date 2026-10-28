@@ -5,7 +5,7 @@
 | **Candidate** | Murtaza Mazhar |
 | **Reference** | MATACS-TH-2026-02 |
 | **Role** | Associate Software Developer |
-| **Time actually spent** | **[FILL IN, e.g. about 2 hours: 75 min on the design, the rest on the optional prototype]** |
+| **Time actually spent** | About 1.5 hours in total, including the optional prototype |
 
 ## Files
 
@@ -40,6 +40,6 @@ The score breakdown for each proposal is in [`prototype/output/report.md`](proto
 
 ## How I used AI tools
 
-I used Claude (in Claude Code) as a drafting partner: to stress-test the flow against the five sample proposals, draft the extraction prompt and JSON schema, and write the optional prototype. I checked every score by hand against the criteria before accepting it. **One place I disagreed:** the first approach gave proposal D zero timeline points and ranked it 3rd. I changed that to *flagged*, because a missing schedule is a question for the bidder, not a score of zero. With 14 weeks or less D would rank above E, so silently ranking it would hide a decision a person should make.
+I used Claude Code quite a lot on this. I gave it the brief, talked through the flow with it, and had it draft the prompts, the write-up and the prototype script. Most of the files came out of one session, which is why the commits are close together.
 
-<!-- Edit the paragraph above so it matches exactly how you used AI and where you corrected it. -->
+Where I didn't just go with it: proposal D. If you only run the formulas, D gets zero for timeline and lands 3rd. I didn't think that was fair, because D never gave a bad timeline, it just didn't give one. If they come back with 14 weeks or less, they'd actually beat E. So I made D "flagged" and left it to the reviewer to ask the bidder.
