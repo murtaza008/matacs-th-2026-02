@@ -1,6 +1,6 @@
 # Triage report: Commercial Solar Installation (criteria v1)
 
-Run 20261028T064228Z · mode: offline fixtures · prompt extract-v1 · criteria sha256 3b05757aea25
+Run 20261028T064714Z · mode: offline fixtures · prompt extract-v1 · criteria sha256 3b05757aea25
 
 | Proposal | Status | Rank | Score | Reason |
 |---|---|---|---|---|
